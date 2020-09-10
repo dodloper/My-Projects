@@ -8,16 +8,16 @@ public static void main(String[] args){
 	Scanner i = new Scanner (System.in);
 	String islem = i.nextLine(); 
 	 if (!islem.equals("+")){
-		 if (!islem.equals("-")){
-			 if (!islem.equals("*")){
-				 if (!islem.equals("/")){
-					 if (!islem.equals("^2")){
+	 if (!islem.equals("-")){
+	 if (!islem.equals("*")){
+	 if (!islem.equals("/")){
+	 if (!islem.equals("^2")){
 		 System.out.println("Lütfen Tekrar Deneyiniz");
 		 return;
-	         }
-	       }
-	     }
-	   }
+	 }
+	 }
+         }
+         }
  	 }
 	 System.out.println("İlk sayıyı giriniz: ");
 	 Scanner s = new Scanner (System.in);
