@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+
+public class hesapMakinesi {
+public static void main(String[] args){	
+	
+	System.out.println("Ne işlem yapmak istiyorsunuz: ");
+	Scanner i = new Scanner (System.in);
+	String islem = i.nextLine(); 
+	 if (!islem.equals("+")){
+		 if (!islem.equals("-")){
+			 if (!islem.equals("*")){
+				 if (!islem.equals("/")){
+					 if (!islem.equals("^2")){
+		 System.out.println("Lütfen Tekrar Deneyiniz");
+		 return;
+	         }
+	       }
+	     }
+	   }
+ 	 }
+	 System.out.println("İlk sayıyı giriniz: ");
+	 Scanner s = new Scanner (System.in);
+	 int num1 = s.nextInt();
+
+	 if(islem.equals("^2")) {
+		 System.out.println(num1*num1); 
+		 return;
+	 }
+	 
+	 System.out.println("İkinci sayıyı giriniz: ");
+	 int num2 = s.nextInt();
+	 
+	 if(islem.equals("+"))  {
+		 System.out.println("Sonuç: " + (num1 + num2) );
+	 }
+	
+	 if( islem.equals("-"))  {
+		 System.out.println("Sonuc: " + (num1 - num2));
+	 }
+	 
+	 if(islem.equals("*"))  {
+		 System.out.println("Sonuc: " + (num1 * num2));
+	 }
+	 
+	 if( islem.equals("/"))  {
+		 System.out.println("Sonuc: " + (float)((float)num1 / (float)num2));
+	 }
+	 
+	  
+	 }
+}
+
